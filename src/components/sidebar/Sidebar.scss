@@ -1,0 +1,116 @@
+.sidebar {
+    display: flex;
+    flex: 0.3; //全体幅のうちの30%幅を取る
+    height: 100vh;
+
+    .sidebarLeft {
+        display: flex;
+        flex-direction: column; //縦
+        align-items: center;
+        padding: 7px 15px;
+        background-color: #9FE6A0;
+
+
+        .serverIcon {
+            //まるを作る
+            width: 60px;
+            height: 60px;
+            background-color: #C4DAD2;
+            border-radius: 9999px;
+            margin-bottom: 10px;
+            position: relative;
+            margin-top: 7px;
+
+            img {
+                position: absolute;
+                width: 60px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .sidebarRight {
+        background-color: #4F7350;
+        width: 300px;
+        position: relative;
+        flex-grow: 1;
+
+        .sidebarTop {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;    
+        }
+
+        .sidebarChannels {
+            padding: 13px;
+            
+            .sidebarChannelsHeader {
+                display: flex;
+                color: white;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 5px;
+
+                .sidebarHeader {
+                    display: flex;
+                }
+
+                .sidebarAddIcon {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .sidebarFooter {
+            position: absolute;
+            bottom: 0;//一番下に設置
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 93%;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-top: 1px solid 16423C;
+            padding-top: 10px;
+            margin-left: -3px;
+            background-color: #6FA170;
+            box-shadow: 0 1px 3px 0 rgb(26, 25, 25);
+
+            .sidebarAccount {
+                display: flex;
+                align-items: center;
+
+                img {
+                    padding-left: 5px;
+                    width: 50px;
+                    border-radius: 50%;
+                }
+
+                .accountName {
+                    margin-left: 5px;
+                    border-radius: 50%;
+
+                    h4 {
+                        color: white;
+                        font-weight: 500;
+                    }
+
+                    span {
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+
+            .sidebarVoice {
+                display: flex;
+                align-items: center;
+                color: #ffffff;
+                padding-right: 10px;
+            }
+        }
+    }
+}
